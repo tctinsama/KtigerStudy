@@ -42,7 +42,7 @@ Trần Chánh Tín - Kỹ sư Công nghệ Thông tin - Cầu nối tiếng Hàn
 ## 📂 How to run
 
 # 1. Clone repo
-git clone https://github.com/your-username/korean-learning-platform.git
+git clone https://github.com/tctinsama/KtigerStudy.git
 
 # 2. Cài đặt frontend
 cd frontend
