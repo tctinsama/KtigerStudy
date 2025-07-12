@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson Form</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container my-4">
+    <h2 th:text="${lesson.lessonId != null} ? 'Edit Lesson' : 'Add Lesson'"></h2>
+    <form th:action="@{/lessons/save}" th:object="${lesson}" method="post">
+        <input type="hidden" th:field="*{lessonId}"/>
+        <div class="form-group">
+            <label for="levelId">Level ID</label>
+            <input type="text" th:field="*{levelId}" class="form-control" id="levelId" required>
+        </div>
+        <div class="form-group">
+            <label for="lessonName">Lesson Name</label>
+            <input type="text" th:field="*{lessonName}" class="form-control" id="lessonName" required>
+        </div>
+        <div class="form-group">
+            <label for="lessonDescription">Description</label>
+            <input type="text" th:field="*{lessonDescription}" class="form-control" id="lessonDescription">
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a th:href="@{/lessons}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+</body>
+</html>

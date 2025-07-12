@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lessons List</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container my-4">
+    <h1>Lessons List</h1>
+    <a th:href="@{/lessons/new}" class="btn btn-primary btn-sm mb-3">Add Lesson</a>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Lesson ID</th>
+            <th>Level ID</th>
+            <th>Lesson Name</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="lesson : ${lessons}">
+            <td th:text="${lesson.lessonId}"></td>
+            <td th:text="${lesson.levelId}"></td>
+            <td th:text="${lesson.lessonName}"></td>
+            <td th:text="${lesson.lessonDescription}"></td>
+            <td>
+                <a th:href="@{/lessons/edit/{id}(id=${lesson.lessonId})}" class="btn btn-primary btn-sm">Edit</a>
+                <a th:href="@{/lessons/delete/{id}(id=${lesson.lessonId})}" class="btn btn-danger btn-sm"
+                   onclick="return confirm('Are you sure?')">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
