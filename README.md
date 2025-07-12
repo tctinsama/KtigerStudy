@@ -25,11 +25,6 @@ A modern web-based platform to support Vietnamese learners in studying Korean la
 | HTML / CSS     | RESTful API     | Prisma ORM   | Cloudinary (media)   |
 | JavaScript     | JWT Auth        |              | GitHub Pages (FE)    |
 
----
-
-## 📸 Screenshots
-
-> *(Bạn có thể chèn hình ảnh demo màn hình nếu có)*
 
 ---
 
@@ -40,14 +35,12 @@ Trần Chánh Tín - Kỹ sư Công nghệ Thông tin - Cầu nối tiếng Hàn
 - 💻 Tốt nghiệp Trường Đại học CNTT & Truyền thông Việt-Hàn  
 - 🌐 Định hướng Bridge System Engineer làm việc tại công ty Hàn Quốc hoặc môi trường quốc tế  
 
-🔗 **LinkedIn**: [linkedin.com/in/yourname](#)  
 🔗 **Email**: work.tctin@gmail.com
 
 ---
 
 ## 📂 How to run
 
-```bash
 # 1. Clone repo
 git clone https://github.com/your-username/korean-learning-platform.git
 
